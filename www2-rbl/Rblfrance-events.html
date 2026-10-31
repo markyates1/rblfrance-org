@@ -286,7 +286,8 @@ function markdown(text){
 function field(label,value){const line=node('div','event-meta');line.append(node('span','field-label',label+': '));line.append(markdown(value));return line;}
 function render(){
  target.replaceChildren();const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
- const visible=events.filter(e=>pastToggle.checked||e.month>today.slice(0,7)||(e.month===today.slice(0,7)&&(e.day==='??'||e.day>=today.slice(-2))));
+ const cutoff=new Date(now);cutoff.setDate(cutoff.getDate()-14);const cutoffStr=[cutoff.getFullYear(),String(cutoff.getMonth()+1).padStart(2,'0'),String(cutoff.getDate()).padStart(2,'0')].join('-');
+ const visible=events.filter(e=>pastToggle.checked||e.day==='??'||e.month+'-'+e.day>=cutoffStr);
  counter.textContent=visible.length+' event'+(visible.length===1?'':'s')+' listed';
  if(!visible.length){target.append(node('div','empty','No events to display.'));return;}
  let lastMonth='',group;
