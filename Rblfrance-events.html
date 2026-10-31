@@ -263,7 +263,7 @@ function render(){
   if(e.time)body.append(field('Time',e.time));
   if(e.place)body.append(field('Place',e.place));
   if(e.details){const desc=node('p','event-description');desc.append(node('span','field-label','Description'));desc.append(markdown(e.details.replace(/^\[Invited event\]\s*/i,'')));body.append(desc);}
-  if(/^(https:\/\/|mailto:)/i.test(e.link)){const a=node('a','event-link',e.link.startsWith('mailto:')?'Email to enquire →':'More information →');a.href=e.link;body.append(a);}
+  if(/^(https:\/\/|mailto:)/i.test(e.link)){const a=node('a','event-link',e.link.startsWith('mailto:')?'Email to enquire ›':'More information ›');a.href=e.link;body.append(a);}
   card.append(date,body);group.append(card);
  }
 }

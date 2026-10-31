@@ -538,7 +538,7 @@ FILENAME: 2007-07_Mini_Newsletter.pdf
 <nav id="navigation"><a href="Rblfrance7.html">Home</a><a href="Rblfrance7.html#about">About</a><a href="Rblfrance-branches.html">Branches</a><a href="Rblfrance-remembrance.html">Remembrance</a><a href="Rblfrance-events.html">Events</a><a class="button" aria-current="page" href="Rblfrance-newsletters.html">Newsletters</a><a href="Rblfrance7.html#membership">Membership</a></nav>
 </div></header>
 <main>
-<section class="hero"><div class="wrap"><div class="hero-inner"><h1>Newsletters</h1><p>Every Paris Branch newsletter in one archive, newest first. The 2026 issues and May 2022 are in the new navy and poppy-red design.</p><a class="button" href="newsletter_archive/2026-09_Newsletter.pdf">Latest: September 2026 →</a></div></div></section>
+<section class="hero"><div class="wrap"><div class="hero-inner"><h1>Newsletters</h1><p>Every Paris Branch newsletter in one archive, newest first. The 2026 issues and May 2022 are in the new navy and poppy-red design.</p><a class="button" href="newsletter_archive/2026-09_Newsletter.pdf">Latest: September 2026 ›</a></div></div></section>
 <section class="section wrap" style="padding-top:0"><div class="kicker">Latest</div><h2>Latest issues</h2><div class="latest-cards" id="latest-cards"></div></section>
 <section class="section wrap">
 <div class="kicker">Archive</div><h2>All newsletters</h2>
@@ -571,7 +571,7 @@ function parseNewsletters(text){
 const items=parseNewsletters(document.getElementById('newsletters-data').textContent);
 const archive=document.getElementById('archive'), yearNav=document.getElementById('year-nav'), count=document.getElementById('count'), noResults=document.getElementById('noResults'), input=document.getElementById('search');
 // Latest cards: first three blocks
-document.getElementById('latest-cards').innerHTML=items.slice(0,3).map(n=>'<div class="latest-card"><h3>'+n.label+'</h3><p>Paris Branch newsletter, '+n.label.toLowerCase()+', in the new design.</p><a class="more" href="'+n.href+'"><span class="pdf-icon">PDF</span> →</a></div>').join('');
+document.getElementById('latest-cards').innerHTML=items.slice(0,3).map(n=>'<div class="latest-card"><h3>'+n.label+'</h3><p>Paris Branch newsletter, '+n.label.toLowerCase()+', in the new design.</p><a class="more" href="'+n.href+'"><span class="pdf-icon">PDF</span> ›</a></div>').join('');
 // Year sections, newest year first, in the order the blocks appear
 const years=[...new Set(items.map(n=>n.year))];
 yearNav.innerHTML=years.map(y=>'<a href="#year-'+y+'">'+y+'</a>').join('');
@@ -587,7 +587,7 @@ years.forEach(year=>{
   const ul=document.createElement('ul'); ul.className='news-rows';
   items.filter(n=>n.year===year).forEach(n=>{
     const li=document.createElement('li'); li.className='news-row'; li.dataset.search=n.search;
-    li.innerHTML='<a class="news-link" href="'+n.href+'"><span class="news-date">'+n.label+'</span><span class="news-type">'+n.type+'</span><span class="news-open"><span class="pdf-icon">PDF</span> →</span></a>';
+    li.innerHTML='<a class="news-link" href="'+n.href+'"><span class="news-date">'+n.label+'</span><span class="news-type">'+n.type+'</span><span class="news-open"><span class="pdf-icon">PDF</span> ›</span></a>';
     ul.appendChild(li);
   });
   sec.appendChild(ul); archive.appendChild(sec);
