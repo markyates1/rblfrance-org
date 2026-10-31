@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Our Branches | Royal British Legion in France</title>
+<style>
+:root{--navy:#17344d;--red:#b82135;--ink:#28333c;--muted:#58636c;--paper:#f7f7f5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}a:hover{color:var(--red)}.wrap{width:min(1140px,92%);margin:auto}.top{background:var(--navy);color:white;padding:8px 0;font-size:12px;letter-spacing:.05em}.header{background:white;position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #00000012}.header-inner{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:85px}.brand{display:flex;align-items:center;gap:16px}.brand img{width:160px;max-height:72px;object-fit:contain}.brand-name{font-weight:700;color:var(--navy);font-size:16px}.brand-country{font-size:12px;letter-spacing:.16em;color:var(--muted)}nav{display:flex;align-items:center;gap:23px}nav a{font-size:13px;font-weight:600}.button{display:inline-block;padding:12px 20px;background:var(--red);color:white;border-radius:3px;font-size:13px;font-weight:bold}.button:hover{background:#981c2e;color:white}.menu{display:none;border:0;background:none;font-size:26px;color:var(--navy)}.hero{background:linear-gradient(90deg,#0e253fe0,#0e253f42),url('https://commons.wikimedia.org/wiki/Special:FilePath/Field_of_Poppies2.jpg') center/cover;min-height:430px;display:flex;align-items:center;color:white}.hero-inner{padding:80px 0;max-width:720px}.hero h1{font-family:Georgia,serif;font-size:clamp(36px,5vw,58px);font-weight:normal;line-height:1.15;margin:0 0 22px}.hero p{font-size:17px;max-width:620px;margin:0 0 27px;color:#f0f2f4}.section{padding:70px 0}.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:bold}h2{font-family:Georgia,serif;font-size:clamp(29px,3.4vw,40px);font-weight:normal;line-height:1.2;color:var(--navy);margin:12px 0 20px}.lead{max-width:830px;color:var(--muted);font-size:16px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:35px}.card{border:1px solid #e2e6e8;background:white;overflow:hidden}.card img{width:100%;height:170px;object-fit:cover;display:block}.card-body{padding:21px}.card h3{font-family:Georgia,serif;font-size:23px;font-weight:normal;color:var(--navy);margin:0 0 10px}.card p{font-size:14px;color:var(--muted);margin:0 0 15px}.more{font-size:13px;color:var(--red);font-weight:bold}.history{background:var(--paper)}.history-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:70px;align-items:center}.history p,.membership p{color:var(--muted)}.event{border-top:1px solid #dfe3e6;padding:23px 0;display:grid;grid-template-columns:190px 1fr;gap:25px}.event:last-child{border-bottom:1px solid #dfe3e6}.event strong{color:var(--navy)}.event p{margin:0;color:var(--muted)}.membership{background:#eef2f4}.footer{background:#102638;color:#c9d2d9;padding:45px 0 25px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}.footer h3{font-size:14px;color:white}.footer p,.footer a{font-size:13px}.footer-links{display:flex;flex-direction:column;gap:8px}.credits{border-top:1px solid #ffffff24;margin-top:30px;padding-top:20px;font-size:11px;color:#aab7c0}.credits a{text-decoration:underline;font-size:11px}@media(max-width:950px){.cards{grid-template-columns:repeat(2,1fr)}nav{gap:12px}.history-grid{gap:30px}}@media(max-width:700px){.header-inner{min-height:70px}.brand img{width:110px}.menu{display:block}nav{display:none;position:absolute;top:70px;left:0;right:0;background:white;padding:20px 4%;flex-direction:column;align-items:stretch;box-shadow:0 12px 18px #0002}nav.open{display:flex}.hero{min-height:370px}.hero-inner{padding:55px 0}.cards,.history-grid,.footer-grid{grid-template-columns:1fr}.event{grid-template-columns:1fr;gap:4px}.section{padding:50px 0}}
+
+/* Historical photograph without grey framing */
+.history-photo{margin:0;background:transparent;min-height:0}
+.history-photo img{display:block;width:100%;height:auto;object-fit:contain;background:transparent}
+.history-photo .image-note{font-size:12px;color:var(--muted);padding:9px 0 0}
+.card-media{position:relative}
+.card-media img{width:100%;height:170px;object-fit:cover;display:block}
+
+/* Compact advertiser image strip */
+.sponsors{padding:24px 0 30px;border-top:1px solid #e6e9eb;background:#fff}
+.sponsors-title{font:600 14px Arial,sans-serif;color:var(--navy);margin:0 0 12px}
+.sponsors-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.sponsor{display:flex;align-items:center;justify-content:center;padding:7px 5px;min-height:54px;border:1px solid #e8ebed;background:#fff;border-radius:3px}
+.sponsor img{display:block;height:36px;max-width:100%;width:auto;object-fit:contain}
+.sponsor:hover{border-color:#b8c3ca;background:#f8f9fa}
+@media(max-width:700px){.sponsors{padding:20px 0 24px}.sponsors-grid{gap:5px}.sponsor{padding:4px 2px;min-height:36px}.sponsor img{height:25px}}
+
+/* Version 2.8: small real thumbnails with readable captions */
+.sponsors-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.sponsor{display:flex;flex-direction:column;justify-content:center;gap:7px;min-height:90px;padding:9px 5px;text-align:center}
+.sponsor img{height:34px;width:auto;max-width:100%;object-fit:contain}
+.sponsor-label{display:block;color:#344c60;font:500 12px/1.3 Georgia,serif}
+@media(max-width:700px){.sponsors-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.sponsor{min-height:80px;padding:9px 4px}.sponsor img{height:29px}.sponsor-label{font-size:12px}}
+
+.branch-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.branch{border:1px solid #e6e9eb;background:#fff;padding:20px}
+.branch{padding:14px;overflow:hidden;display:flex;gap:14px;align-items:flex-start}.branch img{width:90px;height:90px;flex:0 0 90px;object-fit:cover;display:block}.branch-body h3{margin:0 0 4px;color:var(--navy)}.branch-body p{margin:0 0 10px}.branch-body .more{display:inline-block}.photo-credits{font-size:12px;color:var(--muted)}
+.branch p{margin:0 0 12px;color:var(--muted)}
+.branch .more{color:var(--red);font-weight:bold}
+@media(max-width:700px){.branch-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap">ROYAL BRITISH LEGION · FRANCE</div></div>
+<header class="header"><div class="wrap header-inner">
+<a class="brand" href="Rblfrance4.html"><img alt="Royal British Legion logo" onerror="this.style.display='none'" src="https://functions.rblcdn.co.uk/sitefinity/images/default-source/logos/the-royal-british-legion-logo.svg?sfvrsn=ae34d0e_4&amp;method=CropCropArguments&amp;width=281&amp;height=181"/><span><span class="brand-name">Royal British Legion</span><br/><span class="brand-country">FRANCE</span></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="menu" onclick="toggleMenu()">☰</button>
+<nav id="navigation"><a href="Rblfrance4.html#about">About</a><a href="#branches">Branches</a><a href="Rblfrance4.html#remembrance">Remembrance</a><a href="Rblfrance-events.html">Events</a><a href="Rblfrance4.html#membership">Membership</a><a class="button" href="Rblfrance4.html">Home</a></nav>
+</div></header>
+<main>
+
+<section class="hero" id="branches"><div class="wrap"><div class="hero-inner"><h1>Our Branches in France</h1><p>Find the Royal British Legion branch nearest you, and follow its link for meetings, events and contacts.</p></div></div></section>
+<section class="section wrap"><div class="kicker">Branches</div><h2>Eight branches across France</h2><p class="lead">This list follows the old site's own navigation. Paris and Lyon link to the branch pages on GitHub; the other branches link to their pages on the Royal British Legion UK site or their own site.</p>
+<div class="branch-grid">
+<div class="branch"><img alt="Eiffel Tower, Paris" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tour%20Eiffel%20-%2020150801%2013h57%20%2810615%29.jpg?width=800"/><div class="branch-body"><h3>Paris</h3><p>The Paris Branch was established in May 1921, shortly before the formation of the British Legion in the United Kingdom.</p><a class="more" href="index_paris.htm">Paris Branch →</a></div></div>
+<div class="branch"><img alt="Place de la Bourse, Bordeaux" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bordeaux%20-%20Place%20de%20la%20Bourse.jpg?width=800"/><div class="branch-body"><h3>Bordeaux</h3><p>Branch page on the Royal British Legion UK site.</p><a class="more" href="https://www.britishlegion.org.uk/branches/bordeaux" rel="noopener noreferrer" target="_blank">Bordeaux Branch →</a></div></div>
+<div class="branch"><img alt="Ramparts of Saint-Malo, Brittany" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Saint-Malo-%20Les%20remparts%2012B.jpg?width=800"/><div class="branch-body"><h3>Brittany</h3><p>Branch page on the Royal British Legion UK site.</p><a class="more" href="https://branches.britishlegion.org.uk/branches/brittany" rel="noopener noreferrer" target="_blank">Brittany Branch →</a></div></div>
+<div class="branch"><img alt="Basilica of Notre-Dame de Fourvière, Lyon" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/La%20Basilique%20Notre%20Dame%20de%20Fourvi%C3%A8re.jpg?width=800"/><div class="branch-body"><h3>Lyon</h3><p>Lyon Liberation Branch BR 3477.</p><a class="more" href="rbllyon.htm">Lyon Branch →</a></div></div>
+<div class="branch"><img alt="Port of Monaco" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Monaco006.jpg?width=800"/><div class="branch-body"><h3>Provence-Monaco</h3><p>The branch's own website.</p><a class="more" href="https://rblprovencemonaco.com/" rel="noopener noreferrer" target="_blank">Provence-Monaco →</a></div></div>
+<div class="branch"><img alt="Grand'Place, Lille" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lille%20Place%20G%C3%A9n%C3%A9ral%20de%20Gaulle%2001.JPG?width=800"/><div class="branch-body"><h3>Nord-Pas de Calais</h3><p>Branch page on the Royal British Legion UK site.</p><a class="more" href="https://branches.britishlegion.org.uk/branches/nord-pas-de-calais" rel="noopener noreferrer" target="_blank">Nord-Pas de Calais Branch →</a></div></div>
+<div class="branch"><img alt="Bay of Mont Saint-Michel, Normandy" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bay%20of%20Mont%20Saint-Michel%20%281%29.jpg?width=800"/><div class="branch-body"><h3>Normandy</h3><p>Branch page on the Royal British Legion UK site.</p><a class="more" href="https://branches.britishlegion.org.uk/branches/normandy" rel="noopener noreferrer" target="_blank">Normandy Branch →</a></div></div>
+<div class="branch"><img alt="Thiepval Memorial, Somme" loading="lazy" src="https://commons.wikimedia.org/wiki/Special:FilePath/Thiepval%20Memorial%20to%20the%20missing.jpg?width=800"/><div class="branch-body"><h3>Somme</h3><p>Branch page on the Royal British Legion UK site.</p><a class="more" href="https://www.britishlegion.org.uk/branches/somme" rel="noopener noreferrer" target="_blank">Somme Branch →</a></div></div>
+</div>
+<p class="photo-credits">Photos, via Wikimedia Commons: Paris — William Crochot (CC BY-SA 4.0); Bordeaux — Christophe.Finot (CC BY-SA 2.5); Brittany — René Hourdry (CC0); Lyon — Slgrubb; Provence-Monaco — Georges Jansoone; Nord-Pas de Calais — Ad Meskens; Normandy — Avi1111; Somme — Chris Hartford (CC BY 2.0).</p>
+<p>Looking to join? <a class="more" href="paris/joining/rbljoin_instructions_e.htm">Membership information →</a></p>
+</section>
+
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-grid"><div><h3>Royal British Legion · France</h3><p>Information about the Legion, its branches and activities in France.</p></div><div><h3>Sections</h3><div class="footer-links"><a href="Rblfrance4.html#about">About</a><a href="#branches">Branches</a><a href="Rblfrance-events.html">Events</a><a href="Rblfrance4.html#membership">Membership</a></div></div><div><h3>Links</h3><div class="footer-links"><a href="Rblfrance4.html">RBL France</a><a href="https://www.britishlegion.org.uk/">Royal British Legion UK</a></div></div></div><div class="credits">RBL France 2.0 · Branches page.</div></div></footer>
+<script>function toggleMenu(){const n=document.getElementById('navigation'),b=document.querySelector('.menu');n.classList.toggle('open');b.setAttribute('aria-expanded',String(n.classList.contains('open')))}document.querySelectorAll('#navigation a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('navigation').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded','false')}));</script>
+</body>
+</html>
