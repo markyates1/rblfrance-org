@@ -287,13 +287,13 @@ function field(label,value){const line=node('div','event-meta');line.append(node
 function render(){
  target.replaceChildren();const now=new Date();const today=[now.getFullYear(),String(now.getMonth()+1).padStart(2,'0'),String(now.getDate()).padStart(2,'0')].join('-');
  const cutoff=new Date(now);cutoff.setDate(cutoff.getDate()-14);const cutoffStr=[cutoff.getFullYear(),String(cutoff.getMonth()+1).padStart(2,'0'),String(cutoff.getDate()).padStart(2,'0')].join('-');
- const visible=events.filter(e=>pastToggle.checked||e.day==='??'||e.month+'-'+e.day>=cutoffStr);
+ const visible=events.filter(e=>{if(pastToggle.checked)return true;const d=e.day==='??'?new Date(Number(e.month.split('-')[0]),Number(e.month.split('-')[1]),0).getDate():e.day;return e.month+'-'+String(d).padStart(2,'0')>=cutoffStr;});
  counter.textContent=visible.length+' event'+(visible.length===1?'':'s')+' listed';
  if(!visible.length){target.append(node('div','empty','No events to display.'));return;}
  let lastMonth='',group;
  for(const e of visible){
   if(e.month!==lastMonth){lastMonth=e.month;group=node('section','month-group');const [year,month]=e.month.split('-');group.append(node('h3','month-heading',new Date(Number(year),Number(month)-1,1).toLocaleDateString('en-GB',{month:'long',year:'numeric'})));target.append(group);}
-  const uncertain=e.day==='??',past=!uncertain&&e.month+'-'+e.day<today;
+  const uncertain=e.day==='??',past=e.month+'-'+String(e.day==='??'?new Date(Number(e.month.split('-')[0]),Number(e.month.split('-')[1]),0).getDate():e.day).padStart(2,'0')<today;
   const card=node('article','event-card'+(e.invited?' invited':'')+(past?' past':'')),date=node('div','date-box');
   date.append(node('span','day',uncertain?'?':String(Number(e.day))),node('span','year',e.month.slice(0,4)));
   const body=node('div','event-body'),heading=node('h3','');heading.append(markdown(e.title));
