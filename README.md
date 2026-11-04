@@ -1,5 +1,19 @@
 # Royal British Legion in France — new website
 
+Click a button to view the new website. No account, no download, no
+computer knowledge needed.
+
+[![Prototype 1 - First versions, 31 October 2026](https://img.shields.io/badge/Prototype_1-First_versions_31_October_2026-003F59?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html)
+
+[![Prototype 2 - www2, final prototype](https://img.shields.io/badge/Prototype_2-www2_final_prototype-C8102E?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/www2-rbl/index.html)
+
+If a button does not show as a picture, use these plain links instead:
+
+- Prototype 1: https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html
+- Prototype 2 (www2, final prototype): https://markyates1.github.io/rblfrance-org/www2-rbl/index.html
+
+## About this page
+
 This page is a workshop, not the live website.
 
 The live website, the one the public sees today, is still
@@ -7,18 +21,14 @@ The live website, the one the public sees today, is still
 Nothing on this page changes that live website.
 
 GitHub is simply where the new website files are stored while we work
-on them. You do not need an account, a download, or any computer
-knowledge to look at the new website. Just click one of the two big
-buttons below. Each button opens the website in your browser, like any
-normal web page.
+on them. The two buttons above are at the top on purpose, so you do
+not have to scroll through this text to find them. Everything below
+is just detail.
 
-## The two prototypes — click a button to view
+## Prototype 1 — the first versions, 31 October 2026
 
-[![Prototype 1 - First versions, 31 October 2026](https://img.shields.io/badge/Prototype_1-First_versions_31_October_2026-003F59?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html)
-
-**Prototype 1 — the first versions, 31 October 2026.**
 The first tries at a new home page, kept here so we can see how the
-design started. Click the button above to open the very first one.
+design started. The button above opens the very first one.
 
 The first versions, with their dates:
 
@@ -37,20 +47,14 @@ The first versions, with their dates:
 - **31 October 2026 — Main page, Version 7.**
   [Rblfrance7](https://markyates1.github.io/rblfrance-org/Rblfrance7.html)
   This is the home page of the final version. The whole final website
-  is Prototype 2, just below.
+  is Prototype 2, below.
 
-[![Prototype 2 - www2, final prototype](https://img.shields.io/badge/Prototype_2-www2_final_prototype-C8102E?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/www2-rbl/index.html)
+## Prototype 2 — "www2", the final prototype
 
-**Prototype 2 — "www2", the final prototype.**
 This is the complete new website, not just a home page: home, About,
 Branches, Events, Remembrance, Membership, Newsletters, Schools,
 Stories and Archives — 43 pages in all. It is the version prepared to
-be uploaded to the live website. Click the button above to open it.
-
-If a button does not show as a picture, use these plain links instead:
-
-- Prototype 1: https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html
-- Prototype 2 (www2, final prototype): https://markyates1.github.io/rblfrance-org/www2-rbl/index.html
+be uploaded to the live website. The button at the top opens it.
 
 ## What else is in this folder?
 
