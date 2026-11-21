@@ -1,74 +1,39 @@
-# Royal British Legion in France — new website
+# Royal British Legion in France — Historical Archive
 
-Click a button to view the new website. No account, no download, no
-computer knowledge needed.
+This is the old website of the Royal British Legion in France, kept
+here as a historical archive, up to 2026. Nothing here is the live
+website anymore.
 
-[![Prototype 1 - First versions, 31 October 2026](https://img.shields.io/badge/Prototype_1-First_versions_31_October_2026-003F59?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html)
+[![Visit the current website — rblfrance.org](https://img.shields.io/badge/Visit_the_current_website-rblfrance.org-C8102E?style=for-the-badge)](https://www.rblfrance.org/)
 
-[![Prototype 2 - www2, final prototype](https://img.shields.io/badge/Prototype_2-www2_final_prototype-C8102E?style=for-the-badge)](https://markyates1.github.io/rblfrance-org/www2-rbl/index.html)
+If the button above does not show as a picture, use this plain link
+instead:
 
-If a button does not show as a picture, use these plain links instead:
+- Current website: https://www.rblfrance.org/
 
-- Prototype 1: https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html
-- Prototype 2 (www2, final prototype): https://markyates1.github.io/rblfrance-org/www2-rbl/index.html
+## Where is the current website?
 
-## About this page
+The website the public sees today is https://www.rblfrance.org/.
 
-This page is a workshop, not the live website.
+Its files are stored on GitLab, here:
+https://gitlab.com/mfyates/rbl4-paris
 
-The live website, the one the public sees today, is still
-[rblfrance.org](https://www.rblfrance.org/).
-Nothing on this page changes that live website.
+## What is kept here?
 
-GitHub is simply where the new website files are stored while we work
-on them. The two buttons above are at the top on purpose, so you do
-not have to scroll through this text to find them. Everything below
-is just detail.
+- The pages of the old website, as they were until 2026.
+- The newsletters from 2007 to 2026, in the folder
+  `newsletter_archive`.
+- Photos and documents from the old website, in the folders `pics`,
+  `paris`, `paris_newsletters` and `schools`.
 
-## Prototype 1 — the first versions, 31 October 2026
+## What was removed?
 
-The first tries at a new home page, kept here so we can see how the
-design started. The button above opens the very first one.
-
-The first versions, with their dates:
-
-- **31 October 2026 — First prototype.**
-  [Rblfrance2](https://markyates1.github.io/rblfrance-org/Rblfrance2.html.html)
-- **31 October 2026 — Same prototype, with its links pointing inside
-  the new website instead of to the old website.**
-  [Rblfrance3](https://markyates1.github.io/rblfrance-org/Rblfrance3.html.html)
-- **31 October 2026 — Main page, version 2.9, with a new Events page,
-  version 3.2.**
-  [Rblfrance4](https://markyates1.github.io/rblfrance-org/Rblfrance4.html.html)
-  and
-  [Events](https://markyates1.github.io/rblfrance-org/Rblfrance-events.html)
-- **31 October 2026 — Main page, Version 5.**
-  [Rblfrance5](https://markyates1.github.io/rblfrance-org/Rblfrance5.html)
-- **31 October 2026 — Main page, Version 7.**
-  [Rblfrance7](https://markyates1.github.io/rblfrance-org/Rblfrance7.html)
-  This is the home page of the final version. The whole final website
-  is Prototype 2, below.
-
-## Prototype 2 — "www2", the final prototype
-
-This is the complete new website, not just a home page: home, About,
-Branches, Events, Remembrance, Membership, Newsletters, Schools,
-Stories and Archives — 43 pages in all. It is the version prepared to
-be uploaded to the live website. The button at the top opens it.
-
-## What else is in this folder?
-
-- The folder called `www2-rbl` holds the whole final prototype
-  (Prototype 2). That is the copy made to be uploaded to the live
-  website.
-- The files called `Rblfrance2`, `Rblfrance3`, `Rblfrance4`,
-  `Rblfrance5` and `Rblfrance7` are the earlier home pages listed
-  above, kept for history.
-- The many older `.htm` files are pages from the original old
-  website, kept here as a reference. They are not the new design.
+In November 2026, once the new website went live, the two prototypes
+of the new website were removed from here: Prototype 1, the first
+tries from 31 October 2026, and Prototype 2 ("www2"), the final
+prototype. The new website is the one linked above.
 
 ## If you spot a mistake
 
 Please do not edit the files here yourself. Just tell Frank what you
-saw and on which page, and it will be fixed here first, checked, and
-only then put on the live website.
+saw and on which page.
