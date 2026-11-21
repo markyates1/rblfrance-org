@@ -25,6 +25,10 @@ https://gitlab.com/mfyates/rbl4-paris
   `newsletter_archive`.
 - Photos and documents from the old website, in the folders `pics`,
   `paris`, `paris_newsletters` and `schools`.
+- A copy of the current website, as it was on 21 November 2026, in
+  the folder `www4-2026-11-21-archive`. As a safety measure, this
+  copy is refreshed every three months, each time under a new folder
+  with the new date.
 
 ## What was removed?
 
